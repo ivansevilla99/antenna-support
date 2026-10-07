@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Antenna – Support</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="top"><img src="icon.png" alt="Antenna"><strong>Antenna</strong></header>
+<nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a><a href="privacy-es.html" lang="es">Español</a></nav>
+
+<h1>Support</h1>
+<p>Antenna is a free, private player for M3U playlists and XMLTV guides on iPhone, iPad and Mac.</p>
+
+<h2>Getting started</h2>
+<div class="card">
+<ol>
+<li>Open Antenna and accept the notice.</li>
+<li>Tap <strong>Add a playlist</strong>. Enter a name and the playlist URL (or choose a file).</li>
+<li>Optionally add an XMLTV guide URL. If the playlist announces one itself, Antenna uses it.</li>
+<li>Pick a channel to start watching.</li>
+</ol>
+</div>
+
+<h2>Frequently asked questions</h2>
+<h3>Does Antenna include channels?</h3>
+<p>No. Antenna ships with no channels and never suggests any. You add playlists you are entitled to use.</p>
+<h3>“A server with the specified hostname could not be found” or “Could not connect to the server”</h3>
+<p>The address in your playlist does not answer. Open it in Safari: if Safari cannot open it either, the provider is down or has changed address, and you need a new URL from them.</p>
+<h3>“No channels were found”</h3>
+<p>The address did not return an M3U playlist. A single HLS stream (<code>.m3u8</code>) is accepted and played as one channel.</p>
+<h3>A channel does not play</h3>
+<p>Open the engine menu in the player and try the other engine: AVPlayer (HLS, Picture in Picture, AirPlay) or VLC (<code>.ts</code>, RTSP, UDP, DASH and more). Antenna can switch to VLC automatically when AVPlayer fails (Settings).</p>
+<h3>The guide is empty or off by some hours</h3>
+<p>Use <strong>Settings → Guide → Time shift</strong>. Use “Reload guide” after changing the guide URL.</p>
+<h3>Keyboard shortcuts (Mac, or iPad with a keyboard)</h3>
+<p><kbd>↑</kbd>/<kbd>↓</kbd> change channel · digits jump to a number · <kbd>Space</kbd> play/pause · <kbd>M</kbd> mute · <kbd>F</kbd> full screen · <kbd>L</kbd> channel list · <kbd>I</kbd> programme info · <kbd>⌫</kbd> last channel · <kbd>Esc</kbd> close.</p>
+<h3>Is my data safe?</h3>
+<p>Everything stays on your device. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Contact</h2>
+<p>Found a bug or have an idea? <a href="https://github.com/ivansevilla99/antenna-support/issues">Open an issue on GitHub</a>. Please do not post playlist URLs that contain your username or password.</p>
+
+<footer>© 2026 Iván Sevilla · Antenna</footer>
+</main>
+</body>
+</html>
