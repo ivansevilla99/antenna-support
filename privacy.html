@@ -3,36 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Antenna – Privacy policy</title>
+<title>Antenna IPTV – Privacy policy</title>
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<header class="top"><img src="icon.png" alt="Antenna"><strong>Antenna</strong></header>
+<header class="top"><img src="icon.png" alt="Antenna IPTV"><strong>Antenna IPTV</strong></header>
 <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a><a href="privacy-es.html" lang="es">Español</a></nav>
 
 <h1>Privacy policy</h1>
-<p class="muted">Effective October 7, 2026</p>
-<p><strong>Short version: Antenna collects nothing.</strong> No account, no analytics, no ads, no tracking, and no servers of ours.</p>
+<p class="muted">Effective October 13, 2026</p>
+<p><strong>Short version:</strong> Antenna IPTV has no account, no ads, no analytics or tracking software, and no servers of ours. The developer does not receive your playlists, logins or viewing history from the app. The app does connect to the sources <em>you</em> configure, and those servers receive the requests described below.</p>
 
-<h2>What Antenna stores</h2>
-<p>Your playlists, guide settings, favorites, recent channels and app settings are saved <strong>only on your device</strong>. We never receive them. Deleting the app deletes them.</p>
+<h2>What is stored on your device</h2>
+<ul>
+<li><strong>Playlists:</strong> the name, the address (URL) or imported file, the optional guide address, the optional username and any custom User-Agent you set. If you put a username or password <em>inside</em> a playlist address (for example <code>?username=…&amp;password=…</code>), it is stored with that address.</li>
+<li><strong>Passwords</strong> typed in the “Private playlist” section are stored in the <strong>Apple Keychain</strong> on your device, not in the playlist file.</li>
+<li><strong>Library data:</strong> channels read from your playlists, favorites, recent channels, guide data and your app settings (including language and safety limits).</li>
+<li>Playlist and settings files are protected by your device’s file protection and, like other app data, may be included in your device backups according to your Apple settings. Deleting the app deletes this data.</li>
+</ul>
+<p>Antenna IPTV hides passwords, tokens and similar values from addresses on screen, in error messages and in logs. It does not change the addresses you saved.</p>
 
-<h2>What Antenna connects to</h2>
-<p>Antenna only contacts the addresses <em>you</em> add: your playlist URLs, your guide (XMLTV) URLs, the stream addresses inside your playlists, and the channel logos those playlists reference. Those servers are run by third parties and can see your IP address and what you request, like any other app or browser would. Antenna does not add identifiers, and it does not send them anything about you beyond what a normal request needs (and the User-Agent you choose in the settings).</p>
+<h2>What the app connects to</h2>
+<p>Antenna IPTV contacts only addresses that <em>you</em> add or that your own playlists contain: the playlist URL, the guide (XMLTV) URL, the stream addresses inside your playlists, and the channel logos they reference. Those servers belong to third parties. Each request can reveal to them:</p>
+<ul>
+<li>your IP address and the time of the request;</li>
+<li>the address you request and the standard technical headers of the request, including the User-Agent (by default <code>Antenna/0.1</code>, which you can change in Settings);</li>
+<li>if you entered a username and password for a playlist, they are sent to that playlist’s own server using HTTP Basic authentication — <strong>encrypted only when the address starts with https://</strong>. The app warns you when you use a login with an http:// address. Your login is not forwarded to other hosts, including after a redirect, and the app stops redirects from https to http when a login is attached;</li>
+<li>for streams that use an <code>http://</code> address, the traffic is not encrypted.</li>
+</ul>
+<p>What those servers do with that information is governed by their own policies, not ours.</p>
+
+<h2>What is sent to the developer</h2>
+<p>Nothing is sent from the app to the developer. The app contains no analytics, advertising or crash-reporting software of ours. You can reach the developer only by the contact options on the <a href="support.html">support page</a>; anything you post there (for example a GitHub issue) is visible to others, so please do not include playlist addresses, usernames or passwords.</p>
+<p>Apple, which runs the App Store, may give developers aggregated and anonymous statistics (such as downloads) and, if you opt in, crash information shared with developers. That data is collected by Apple under Apple’s privacy policy.</p>
+
+<h2>Third-party components</h2>
+<p>Playback uses Apple’s media framework (AVFoundation) and the open-source VLC engine (VLCKit). They connect to the stream addresses you provide. VLCKit contains optional network features that Antenna IPTV does not use; we have not independently audited every network request made by third-party components, so we do not claim that they make none beyond your sources.</p>
 
 <h2>Tips</h2>
-<p>Antenna is free and has no ads. If you leave an optional tip, the payment is processed entirely by Apple through the App Store. We do not receive your name, payment details or any personal data. Apple’s own privacy policy applies to that purchase.</p>
-
-<h2>Data we collect</h2>
-<p>None. Antenna does not collect, share or sell personal data, and it includes no third-party analytics or advertising software.</p>
+<p>The app is free and has no ads. If you leave an optional tip, the payment is processed entirely by Apple through the App Store. We do not receive your name, payment details or other personal data. Apple’s privacy policy applies to that purchase.</p>
 
 <h2>Content</h2>
-<p>Antenna is a player. It includes no channels and never suggests any. You are responsible for loading only content you are entitled to watch.</p>
+<p>Antenna IPTV is a player. It includes no channels and never suggests any. You are responsible for loading only content you are entitled to watch.</p>
 
 <h2>Children</h2>
-<p>Antenna does not collect information from anyone, including children.</p>
+<p>The app does not collect information from anyone, including children.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the new version will be published on this page with a new effective date.</p>
@@ -40,7 +57,7 @@
 <h2>Contact</h2>
 <p>Questions? Open an issue on the <a href="https://github.com/ivansevilla99/antenna-support/issues">support page on GitHub</a>.</p>
 
-<footer>© 2026 Iván Sevilla · Antenna</footer>
+<footer>© 2026 Iván Sevilla · Antenna IPTV</footer>
 </main>
 </body>
 </html>
